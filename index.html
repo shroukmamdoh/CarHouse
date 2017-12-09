@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car House</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.css" />
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <!-- my style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- chart.js-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- header -->
+        <div id="header">
+            <nav class="navbar navbar-default header-menu">
+                <div class="container-fluid">
+                    <div class="item-left">
+                        <div id="sidebar-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <a class="company-name" href="#">THE<span>CAR</span>SHOP</a> 
+                    </div>
+                    <!-- right-Social-item -->
+                    <div class="social visible-lg">
+                        <span><a href="#"><i class="fa fa-envelope fa-lg"></i></a></span>
+                        <span><a href="#"><i class="fa fa-bell fa-lg"></i></a></span>
+                        <span><a href="#"><i class="fa fa-user fa-lg"></i></a></span>
+                        <div class="online">
+                            <img src="images/p1.png"width="45" height="45">
+                            <select class="form-control">
+                                <option>Ahmed Mamdoh</option>
+                                <option>Admin2</option>
+                                <option>Admin3</option>
+                            </select>
+                        </div>
+                    </div><!--social end-->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <i class="fa fa-home" aria-hidden="true"></i>                        
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="main-menu"><a href="index.html">Home</a></li>
+                            <li class="main-menu"><a href="#">Products</a></li>
+                            <li class="main-menu"><a href="#">Locations</a></li>
+                            <li class="main-menu"><a href="#">offerss</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div> <!--header end-->
+        
+        <!--sidebar-->
+        <div id="sidebar">
+            <div class="menu">
+                <!-- sidebar-in-normal-size -->
+                <div id="sidebar-in-normal-size">
+                    <div class="company-logo">
+                        <img src="images/logoo2.png">
+                    </div>
+                </div>
+                <!-- sidebar-in-xs-size -->
+                <div  id="sidebar-in-xs-size" class="admin-detailes">
+                    <div class="admin-img">
+                        <img src="images/p1.png"width="55" height="55" style="background-color: #fff">
+                    </div>
+                    <div class="manger">
+                        <a class="admin-name" data-toggle="collapse" href="#collapse-social-items">
+                            <span class="manger-name">Ahmed Mamdoh</span>
+                            <i class="fa fa-angle-down manger-down" aria-hidden="true"></i>
+                        </a>
+                        <ul id="collapse-social-items" class="collapse admin-social">
+                            <li ><a href"#"><span><i class="fa fa-envelope" aria-hidden="true"></i>Message</span></a></li>
+                            <li ><a href"#"><span><i class="fa fa-bell" aria-hidden="true"></i>notification</span></a></li>
+                            <li ><a href"#"><span><i class="fa fa-sign-out" aria-hidden="true"></i>log out</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <div class="sidebar-item">
+                        <a class="up-down-icon" data-toggle="collapse" href="#collapse-jobRec-items">
+                            <i class="bag-icon fa fa-briefcase" aria-hidden="true"></i>
+                            <span>Products</span>
+                            <i class="dropdown-icon fa fa-angle-left" aria-hidden="true"></i>
+                            <i class="dropdown-icon fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                        <ul id="collapse-jobRec-items" class="collapse">
+                            <li class="sidebar-sub-item">
+                                <a href="Automatics Cars.html">
+                                    <span>- Automatics Cars</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-sub-item">
+                                <a href="manual cars.html">
+                                    <span>- manual cars</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <!--menu-item2-->
+                    <div class="sidebar-item">
+                        <a class="up-down-icon" data-toggle="collapse" href="#collapse-Analystics-items">
+                            <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                            <span>Analystics</span>
+                            <i class="dropdown-icon fa fa-angle-left" aria-hidden="true"></i>
+                            <i class="dropdown-icon fa fa-angle-down" aria-hidden="true"></i>
+                            
+                        </a>
+                        <ul id="collapse-Analystics-items" class="collapse">
+                            <li class="sidebar-sub-item">
+                                <a href="company-insights.html">
+                                    <span>- insights page1</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-sub-item">
+                                <a href="job.html">
+                                    <span>- jobs page2</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <!-- menu item3-->
+                    <div class="sidebar-item">
+                        <a class="up-down-icon" data-toggle="collapse" href="#collapse-manage-items">
+                            <i class="fa fa-cogs" aria-hidden="true"></i>
+                            <span>manage</span>
+                            <i class="dropdown-icon fa fa-angle-down" aria-hidden="true"></i>
+                            <i class="dropdown-icon fa fa-angle-left" aria-hidden="true"></i>
+                        </a>
+                        <ul id="collapse-manage-items" class="collapse">
+                            <li class="sidebar-sub-item">
+                                <a href "#">
+                                    <span>- sub-item1</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-sub-item">
+                                <a href "#">
+                                    <span>- sub-item2</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-sub-item">
+                                <a href "#">
+                                    <span>- sub-item3</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>   
+                </div>
+            </div>
+        </div>
+
+        <!--content-->
+        <div id="content">
+            <div class="row menu_tab">
+                <div class="navv">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#office" aria-controls="Earnings" role="tab" data-toggle="tab">
+                            <img src="images/office.png" width="35" height="35">office </a>
+                        </li>
+                        <li role="presentation"><a href="#Factories" aria-controls="Factories" role="tab" data-toggle="tab">
+                            <img src="images/fact.png" width="35" height="35">Factories</a>
+                        </li>
+                    </ul>
+                    <div id="DASHWORD-up" class="dash-head-word ">
+                        <span><i class="fa fa-tachometer fa-3x"></i>Dashboard</span>
+                    </div>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="office">
+                            <div role="tabpanel" class="tab-pane  active" id="office">
+                                <div class="slider-top ">
+                                    <!--slideshow-->
+                                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                                        </ol>
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="images/car1.jpg"  >
+                                                <div class="carousel-caption">
+                                                    <a class="type" href="#">detailes </a>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img src="images/car2.jpg">
+                                                <div class="carousel-caption">
+                                                    <a class="type" href="#">detailes </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Left and right controls -->
+                                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                        <span class="glyphicon" aria-hidden="true"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                        <span class="glyphicon" aria-hidden="true"></span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="row office-page-part1">
+                                    <div class="box1 col-md-4">
+                                        <span><i class="fa fa-car" aria-hidden="true"></i></span>
+                                        <h4>30</h4>
+                                        <p>sold</p>
+                                    </div>
+                                    <div class="box2 col-md-4">
+                                        <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                                        <h4>150</h4>
+                                        <p>New Customers</p>
+                                    </div>
+                                    <div class="box3 col-md-4">
+                                        <span><i class="fa fa-car" aria-hidden="true"></i></span>
+                                        <h4>50</h4>
+                                        <p>Reserved</p>
+                                    </div>
+                                </div>
+                                <!-- start section3-->
+                                <div class="row office-section3">
+                                    <div class="rating-dist col-md-6">
+                                        <div class="part2-rating-title">
+                                            <p>Cars Reviews<i class="fa fa-exclamation" aria-hidden="true"></i></p>
+                                        </div>
+                                        <table class="table table-striped table-responsive">
+                                            <thead>
+                                                <tr class="all-rating">
+                                                    <th>Over all rating </th>
+                                                    <th><span class="star"><span class="num">4.7 </span><i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star-half-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></span>
+                                                    </th> 
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>car type 1</td>
+                                                    <td>
+                                                        <div class="progress">
+                                                            <span class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                                                40%
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>car type 2</td>
+                                                    <td>
+                                                        <div class="progress">
+                                                            <span class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                                                                90%
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>car type 3</td>
+                                                    <td>
+                                                        <div class="progress">
+                                                            <span class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                                                80%
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>car type 4</td>
+                                                    <td>
+                                                        <div class="progress">
+                                                            <span class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:10%">
+                                                                10%
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>car type 5</td>
+                                                    <td>
+                                                        <div class="progress">
+                                                            <span class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                                                60%
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                </tr>  
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="office-chart col-md-6">
+                                        <div class="part2-rating-title">
+                                            <p>Best selling this month<i class="fa fa-money" aria-hidden="true"></i></p>
+                                        </div>
+                                        <canvas id="pie-chart" width="800" height="450"></canvas>
+                                    </div>
+                                    
+                                </div>
+                                <!-- end section3-->
+                                
+                            </div> <!--end pannel-->
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="Factories">
+                            <!--square-->
+                            <div class="row factories-part1">
+                                
+                                <div class="col-md-4 box1">
+                                    <div class="panel-stat3 bg-danger">
+                                        <h2>2611</h2>
+                                        <h5> Replace </h5>
+                                        <h6><i class="fa fa-arrow-circle-o-up fa-lg"></i>5% in last week</h6>
+                                        <div class="stat-icon">
+                                            <i class="fa fa-car" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="refresh-button">
+                                            <i class="fa fa-refresh"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 box2">
+                                    <div class="panel-stat3 bg-danger">
+                                        <h2>200</h2>
+                                        <h5> sold </h5>
+                                        <h6><i class="fa fa-arrow-circle-o-up fa-lg"></i>50% in last week</h6>
+                                        <div class="stat-icon">
+                                            <i class="fa fa-car" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="refresh-button">
+                                            <i class="fa fa-refresh"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 box3">
+                                    <div class="panel-stat3 bg-danger">
+                                        <h2>611</h2>
+                                        <h5> backed up </h5>
+                                        <h6><i class="fa fa-arrow-circle-o-up fa-lg"></i>12% in last week</h6>
+                                        <div class="stat-icon">
+                                            <i class="fa fa-car" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="refresh-button">
+                                            <i class="fa fa-refresh"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row calender-of-factory">
+                                <div class="date-title">
+                                    <p> Start <span>/</span> End </p>
+                                </div>
+                                <div class="range-date">
+                                    <input type="text" name="daterange"/>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </div> 
+                                <div class="company-view">
+                                    <canvas id="speedChart" width="200" height="80"></canvas>
+                                </div>   
+                            </div>
+
+                            <!--table-->
+                            <div class="row factories-part3">
+                                <div class="part3-title">
+                                    <span> Factories <i class="fa fa-cogs" aria-hidden="true"></i></span>
+                                </div>
+                                <div class="full-detailes">
+                                    <span><a href="#">Relationships :- </a></span>
+                                </div>
+                                <div class="table-responsive table-bordered">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Factory name</th>
+                                                <th>location </th>
+                                                <th>since/date</th>
+                                                <th>products</th>
+                                                <th>benefit</th>
+                                                <th>offers</th>
+                                                <th>replace</th>
+                                                <th>back up</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Factory 1</td>
+                                                <td>cairo</td>
+                                                <td>2012</td>
+                                                <td>500 car</td>
+                                                <td>10105 $</td>
+                                                <td>123</td>
+                                                <td>202 car</td>
+                                                <td>145 car</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Factory 2</td>
+                                                <td>ismalia</td>
+                                                <td>2016</td>
+                                                <td>120 car</td>
+                                                <td>1350 $</td>
+                                                <td>30</td>
+                                                <td>454 car</td>
+                                                <td>65 car</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Factory 3</td>
+                                                <td>cairo</td>
+                                                <td>2014</td>
+                                                <td>300 car</td>
+                                                <td>5040 $</td>
+                                                <td>50</td>
+                                                <td>36 car</td>
+                                                <td>80 car</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>            
+                </div><!--navv end-->
+            </div><!--menu_tab end-->
+        </div> <!--/content-->   
+    </div><!-- /dashboard -->
+	<script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/daterangepicker.js"></script>	
+   
+</body>
+</html>

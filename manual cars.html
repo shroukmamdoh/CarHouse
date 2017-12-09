@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car House</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.css" />
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <!-- my style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- chart.js-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- header -->
+        <div id="header">
+            <nav class="navbar navbar-default header-menu">
+                <div class="container-fluid">
+                    <div class="item-left">
+                        <div id="sidebar-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <a class="company-name" href="#">THE<span>CAR</span>SHOP</a> 
+                    </div>
+                    <!-- right-Social-item -->
+                    <div class="social visible-lg">
+                        <span><a href="#"><i class="fa fa-envelope fa-lg"></i></a></span>
+                        <span><a href="#"><i class="fa fa-bell fa-lg"></i></a></span>
+                        <span><a href="#"><i class="fa fa-user fa-lg"></i></a></span>
+                        <div class="online">
+                            <img src="images/p1.png"width="45" height="45">
+                            <select class="form-control">
+                                <option>Ahmed Mamdoh</option>
+                                <option>Admin2</option>
+                                <option>Admin3</option>
+                            </select>
+                        </div>
+                    </div><!--social end-->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <i class="fa fa-home" aria-hidden="true"></i>                        
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="main-menu"><a href="index.html">Home</a></li>
+                            <li class="main-menu"><a href="#">Products</a></li>
+                            <li class="main-menu"><a href="#">Locations</a></li>
+                            <li class="main-menu"><a href="#">offerss</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div> <!--header end-->
+        
+        <!--sidebar-->
+        <div id="sidebar">
+            <div class="menu">
+                <!-- sidebar-in-normal-size -->
+                <div id="sidebar-in-normal-size">
+                    <div class="company-logo">
+                        <img src="images/logoo2.png">
+                    </div>
+                </div>
+                <!-- sidebar-in-xs-size -->
+                <div  id="sidebar-in-xs-size" class="admin-detailes">
+                    <div class="admin-img">
+                        <img src="images/p1.png"width="55" height="55" style="background-color: #fff">
+                    </div>
+                    <div class="manger">
+                        <a class="admin-name" data-toggle="collapse" href="#collapse-social-items">
+                            <span class="manger-name">Ahmed Mamdoh</span>
+                            <i class="fa fa-angle-down manger-down" aria-hidden="true"></i>
+                        </a>
+                        <ul id="collapse-social-items" class="collapse admin-social">
+                            <li ><a href"#"><span><i class="fa fa-envelope" aria-hidden="true"></i>Message</span></a></li>
+                            <li ><a href"#"><span><i class="fa fa-bell" aria-hidden="true"></i>notification</span></a></li>
+                            <li ><a href"#"><span><i class="fa fa-sign-out" aria-hidden="true"></i>log out</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <div class="sidebar-item">
+                        <a class="up-down-icon" data-toggle="collapse" href="#collapse-jobRec-items">
+                            <i class="bag-icon fa fa-briefcase" aria-hidden="true"></i>
+                            <span>Products</span>
+                            <i class="dropdown-icon fa fa-angle-left" aria-hidden="true"></i>
+                            <i class="dropdown-icon fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                        <ul id="collapse-jobRec-items" class="collapse">
+                            <li class="sidebar-sub-item">
+                                <a href="Automatics Cars.html">
+                                    <span>- Automatics Cars</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-sub-item">
+                                <a href="manual cars.html">
+                                    <span>- manual cars</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <!--menu-item2-->
+                    <div class="sidebar-item">
+                        <a class="up-down-icon" data-toggle="collapse" href="#collapse-Analystics-items">
+                            <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                            <span>Analystics</span>
+                            <i class="dropdown-icon fa fa-angle-left" aria-hidden="true"></i>
+                            <i class="dropdown-icon fa fa-angle-down" aria-hidden="true"></i>
+                            
+                        </a>
+                        <ul id="collapse-Analystics-items" class="collapse">
+                            <li class="sidebar-sub-item">
+                                <a href="company-insights.html">
+                                    <span>- insights page1</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-sub-item">
+                                <a href="job.html">
+                                    <span>- jobs page2</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <!-- menu item3-->
+                    <div class="sidebar-item">
+                        <a class="up-down-icon" data-toggle="collapse" href="#collapse-manage-items">
+                            <i class="fa fa-cogs" aria-hidden="true"></i>
+                            <span>manage</span>
+                            <i class="dropdown-icon fa fa-angle-down" aria-hidden="true"></i>
+                            <i class="dropdown-icon fa fa-angle-left" aria-hidden="true"></i>
+                        </a>
+                        <ul id="collapse-manage-items" class="collapse">
+                            <li class="sidebar-sub-item">
+                                <a href "#">
+                                    <span>- sub-item1</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-sub-item">
+                                <a href "#">
+                                    <span>- sub-item2</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-sub-item">
+                                <a href "#">
+                                    <span>- sub-item3</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <!--content-->
+        <div id="content">
+            <div class="row">
+                <div class="Product-gallery-Automatics">
+                     <!-- row4 -->
+                    <div class="row4 col-lg-3">
+                        <a href="#" data-toggle="modal" data-target=".pop-up-1">
+                            <img src="images/car2.jpg"  class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    
+                    <div class="row4 col-lg-3">
+                        <a href="#" data-toggle="modal" data-target=".pop-up-2">
+                        <img src="images/car1.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+
+                    <div class="row4 col-lg-3">
+                        <a href="#" data-toggle="modal" data-target=".pop-up-2">
+                        <img src="images/car2.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+
+                    <div class="row4 col-lg-3">
+                        <a href="#" data-toggle="modal" data-target=".pop-up-2">
+                        <img src="images/car1.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    <div class="row1 col-lg-6 col-md-6">
+                        <a href="#" data-toggle="modal" data-target=".pop-up-1">
+                            <img src="images/car1.jpg"  class="img-responsive" alt="">
+                        </a>
+                    </div>
+
+                    <div class="row1 col-lg-6 col-md-6">
+                        <a href="#" data-toggle="modal" data-target=".pop-up-2">
+                        <img src="images/car2.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+
+                    <!-- row2 -->
+                    <div class="row2 col-lg-4 col-md-6">
+                        <a href="#" data-toggle="modal" data-target=".pop-up-1">
+                            <img src="images/car1.jpg"  class="img-responsive" alt="">
+                        </a>
+                    </div>
+
+                    <div class="row2 col-lg-4 col-md-6">
+                        <a href="#" data-toggle="modal" data-target=".pop-up-2">
+                        <img src="images/car2.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+
+                    <div class="row2 col-lg-4 col-md-6">
+                        <a href="#" data-toggle="modal" data-target=".pop-up-2">
+                        <img src="images/car1.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+
+                    <!-- row3 -->
+                    <div class="row3 col-lg-6 col-md-6">
+                        <a href="#" data-toggle="modal" data-target=".pop-up-2">
+                        <img src="images/car2.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+
+                    <div class="row3 col-lg-6 col-md-6">
+                        <a href="#" data-toggle="modal" data-target=".pop-up-2">
+                        <img src="images/car1.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+
+                    <div class="modal fade pop-up-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <h4 class="modal-title" id="myLargeModalLabel-1">car type 2</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/car1.jpg" class="img-responsive" alt="">
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal mixer image -->
+        
+                    <div class="modal fade pop-up-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-2" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <h4 class="modal-title" id="myLargeModalLabel-2">car type 1</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/car2.jpg" class="img-responsive" alt="">
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal mixer image -->
+                </div> <!-- /. Product-gallery-Automatics-->
+            </div> <!-- /.row -->
+        </div> <!--/content-->   
+    </div><!-- /dashboard -->
+	<script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/daterangepicker.js"></script>	
+   
+</body>
+</html>
